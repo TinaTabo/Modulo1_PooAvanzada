@@ -62,13 +62,20 @@ export class Person{
     }
 
     printAttributes():void{
-        console.log(`Name = ${this.getName()}`);
-        console.log(`Nationality = ${this.getNationality()}`);
-        console.log(`Profession = ${this.getProfession()}`);
-        console.log(`Experience Years = ${this.getExperienceYears()}`);
+        for (const attr in this) {
+            if (attr == "name"||attr == "nationality"||attr == "profession"||attr == "experienceYears") {
+                console.log(`${attr} = ${eval("this."+ attr)}`);
+            }
+        }
     }
 
     toString():string{
-        return `Name: ${this.getName()},\nNationality: ${this.getNationality()},\nProfession: ${this.getProfession()},\nExperience Years: ${this.getExperienceYears()}`
+        let chain:string = "";
+        for (const attr in this) {
+            if (attr == "name"||attr == "nationality"||attr == "profession"||attr == "experienceYears") {
+                chain += `${attr}: ${eval("this." + attr)}\n`;
+            }
+        }
+        return chain;
     }
 }
