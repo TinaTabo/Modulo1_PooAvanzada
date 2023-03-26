@@ -2,9 +2,9 @@
 import { Platform,StorageDevice } from "./platform";
 
 //-- Pruebas
-let platform1:Platform = new Platform("Netflix",1997,"Netflix,Inc.",45625874421,1,true,1080,true,StorageDevice.cartridge,"red");
-let platform2:Platform = new Platform("Disney+",1997,"The Walt Disney Company",456851879815498,2,true,1080,true,StorageDevice.card,"blue");
-let platform3:Platform = new Platform("Netflix",1997,"Netflix,Inc.",45625874421,1,true,1080,true,StorageDevice.cartridge,"red");
+let platform1:Platform = new Platform("Electronic Arts",1982,"Electronic Arts Inc.",45625874421,1,true,1080,true,StorageDevice.cartridge,"Orange");
+let platform2:Platform = new Platform("Steam",2003,"Valve Corporation",456851879815498,2,true,1080,true,StorageDevice.card,"blue");
+let platform3:Platform = new Platform("Electronic Arts",1982,"Electronic Arts Inc.",45625874421,1,true,1080,true,StorageDevice.cartridge,"Orange");
 
 console.log(`----------------EQUAL-PLATFORMS-----------------`);
 
@@ -34,16 +34,16 @@ console.log(`storageDevice = ${platform3.getStorageDevice()}`);
 console.log(`color = ${platform3.getColor()}`);
 
 console.log(`-------------Cambiando datos...-----------`);
-platform3.setName("Prime Video");
+platform3.setName("Riot Games");
 platform3.setReleaseYear(2006);
-platform3.setCompany("Amazon");
+platform3.setCompany("Riot Games,Inc.");
 platform3.setNBits(48294518945618);
 platform3.setGeneration(3);
 platform3.setHasHD(true);
 platform3.setHDSize(1080);
-platform3.setHasInterntConexion(false);
-platform3.setStorageDevice(StorageDevice.bluray);
-platform3.setColor("Cyan");
+platform3.setHasInterntConexion(true);
+platform3.setStorageDevice(StorageDevice.card);
+platform3.setColor("Red");
 platform3.printAttributes();
 
 
