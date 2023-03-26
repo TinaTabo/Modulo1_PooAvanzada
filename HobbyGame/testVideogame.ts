@@ -83,3 +83,6 @@ console.log(`El juego ${videogame1.getTitle()} está disponible en ${checklangua
 console.log(`El juego ${videogame2.getTitle()} está disponible en ${checklanguage}?: ${videogame2.checkLanguage(checklanguage)}`);
 console.log(`El juego ${videogame3.getTitle()} está disponible en ${checklanguage}?: ${videogame3.checkLanguage(checklanguage)}`);
 console.log(`------------------------------------------------`);
+
+//-- Exportar videojuegos
+export {videogame1,videogame2,videogame3};
