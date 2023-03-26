@@ -1,0 +1,43 @@
+[
+    {
+        "title":"Naruto: Ultimate Ninja Storm",
+        "releaseYear":2008,
+        "developers":[
+            {
+                "name":"James",
+                "nationality":"Australian",
+                "profession":"developer",
+                "experienceYears":3
+            },
+            {
+                "name":"Mark",
+                "nationality":"American",
+                "profession":"director",
+                "experienceYears":20
+            }
+        ],
+        "nationality":"American",
+        "director":{
+            "name":"Mary",
+            "nationality":"Española",
+            "profession":"tester",
+            "experienceYears":11},
+            "languages":["English","Spanish","German","korean","Chinese"],
+            "platforms":[
+                {
+                    "name":"Bandai Games",
+                    "releaseYear":2006,
+                    "company":"Bandai Namco Entertainment Inc.",
+                    "nBits":549856987456,
+                    "generation":1,
+                    "hasHD":true,
+                    "hDSize":1080,
+                    "hasInterntConexion":true,
+                    "storageDevide":"cartridge",
+                    "color":"Orange"
+                }
+            ],
+            "price":10,
+            "score":10
+    }
+]

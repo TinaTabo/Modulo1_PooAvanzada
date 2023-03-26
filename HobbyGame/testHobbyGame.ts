@@ -1,14 +1,13 @@
 //-- Importar variables de prueba
 //-- Developers
-import { persona1,persona2,persona3,persona4,persona5 } from "./testPerson";
+import { persona1 } from "./testPerson";
 //-- Platforms
-import { platform1,platform2,platform3 } from "./testPlatform";
+import { platform1 } from "./testPlatform";
 //-- Videogames
 import { videogame1,videogame2,videogame3 } from "./testVideogame";
 
 //-- Importar clases
 import { HobbyGame } from "./hobbyGame";
-import { Person } from "./person";
 
 //-- Pruebas
 
@@ -45,6 +44,3 @@ console.log(`Juegos disponibles en ${platform1.getName()} en ${language2}: ${hob
 
 console.log(`---------------------checkScore----------------------`);
 console.log(`Juegos con una puntuación mayor que 5: ${hobbyGame.checkScore()}`);
-
-console.log(`----------------------toJSON-------------------------`);
-hobbyGame.toJSON();

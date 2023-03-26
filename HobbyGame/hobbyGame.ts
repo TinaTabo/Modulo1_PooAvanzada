@@ -100,4 +100,12 @@ export class HobbyGame{
         writeFileSync("hobbyGameBBDD.json",hobbyGameJSON);
         console.log(`------Fichero-JSON-Creado-Correctamente------`);
     }
+
+    getInstance(nombreFichero:string):HobbyGame{
+        nombreFichero = nombreFichero.concat(".json");
+        let hobbyGameData = readFileSync(nombreFichero);
+        let hobbyGame = JSON.parse(hobbyGameData.toString());
+        console.log(`--------Creando-instancia-de-HobbyGame-------`);
+        return hobbyGame;
+    }
 }
