@@ -20,6 +20,32 @@ console.log(`-------platform1-------`);
 platform1.printAttributes();
 console.log(`-------platform2-------`);
 platform2.printAttributes();
+console.log(`-------platform3-------`);
+console.log(`Los datos actuales de platform3 son iguales que los de platform1: `);
+console.log(`name = ${platform3.getName()}`);
+console.log(`releaseYear = ${platform3.getReleaseYear()}`);
+console.log(`company = ${platform3.getCompany()}`);
+console.log(`nBits = ${platform3.getNBits()}`);
+console.log(`generation = ${platform3.getGeneration()}`);
+console.log(`hasHD = ${platform3.getHasHD()}`);
+console.log(`hDSize = ${platform3.getHDSize()}`);
+console.log(`hasInterntConexion = ${platform3.getHasInterntConexion()}`);
+console.log(`storageDevice = ${platform3.getStorageDevice()}`);
+console.log(`color = ${platform3.getColor()}`);
+
+console.log(`-------------Cambiando datos...-----------`);
+platform3.setName("Prime Video");
+platform3.setReleaseYear(2006);
+platform3.setCompany("Amazon");
+platform3.setNBits(48294518945618);
+platform3.setGeneration(3);
+platform3.setHasHD(true);
+platform3.setHDSize(1080);
+platform3.setHasInterntConexion(false);
+platform3.setStorageDevice(StorageDevice.bluray);
+platform3.setColor("Cyan");
+platform3.printAttributes();
+
 
 console.log(`----------------------------------------------`);
 
@@ -30,5 +56,9 @@ console.log(`-------platform1-------`);
 console.log(platform1.toString());
 console.log(`-------platform2-------`);
 console.log(platform2.toString());
-
+console.log(`-------platform3-------`);
+console.log(platform3.toString());
 console.log(`----------------------------------------------`);
+
+//-- Exportar ejemplos de plataformas
+export {platform1,platform2,platform3};
