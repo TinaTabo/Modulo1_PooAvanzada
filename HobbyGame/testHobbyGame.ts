@@ -45,3 +45,6 @@ console.log(`Juegos disponibles en ${platform1.getName()} en ${language2}: ${hob
 
 console.log(`---------------------checkScore----------------------`);
 console.log(`Juegos con una puntuación mayor que 5: ${hobbyGame.checkScore()}`);
+
+console.log(`----------------------toJSON-------------------------`);
+hobbyGame.toJSON();

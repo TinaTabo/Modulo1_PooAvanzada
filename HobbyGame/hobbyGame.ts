@@ -1,3 +1,6 @@
+//-- Importar módulos
+import { writeFileSync,readFileSync } from 'fs';
+
 //-- Importar clases
 import { VideoGame } from "./videogame";
 import { Platform } from "./platform";
@@ -89,5 +92,12 @@ export class HobbyGame{
             }
         }
         return videogamesScore5;
+    }
+
+    toJSON():void{
+        console.log(`-----------Creando-Fichero-JSON--------------`);
+        let hobbyGameJSON:string = JSON.stringify(this.videogames);
+        writeFileSync("hobbyGameBBDD.json",hobbyGameJSON);
+        console.log(`------Fichero-JSON-Creado-Correctamente------`);
     }
 }
